@@ -11,7 +11,7 @@
 | Nome completo | RA | GitHub |
 |---|---|---|
 | Giovana Nogueira | 226759 | @giocamara |
-| [Nome 2] | [000000] | [@rafarar |
+| Rafael Ribeiro | 226058 | @rafarar |
 
 **Ambiente de testes:** Chrome 121 no Windows 10, GitHub Pages do fork, editor web do GitHub
 
