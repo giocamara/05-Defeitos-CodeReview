@@ -3,107 +3,106 @@
 > Preencha uma seção completa para cada defeito encontrado. O mínimo
 > exigido é **3 bug reports**. Apague este bloco antes de entregar.
 
-**Dupla:** [Nome 1 + RA] + [Nome 2 + RA]
-**Data da exploração:** [DD/MM/AAAA]
-**Navegador usado:** [Chrome 121 / Firefox 122 / Safari 17 / …]
-**Sistema operacional:** [Windows 11 / macOS 14 / Ubuntu 22.04 / …]
+**Dupla:** Giovana Câmara + 226759 + Rafael Ribeiro + 226058
+**Data da exploração:*/04/2026
+**Navegador usado:** Chrome 121
+**Sistema operacional:** Windows 10
 
 ---
 
 ## BUG-001
 
-**Título:** [CONTEXTO] Descrição específica e acionável do problema
+**Título:** [Criação de Tarefa] Possível criar tarefa com título vazio
 
-**Severidade:** Crítica | Alta | Média | Baixa
-**Justificativa da severidade:** (1-2 frases explicando o impacto técnico)
+**Severidade:** Medio
+**Justificativa da severidade:** não bloqueia o usuário
 
-**Prioridade:** P1 | P2 | P3 | P4
-**Justificativa da prioridade:** (1-2 frases explicando a urgência de negócio)
+**Prioridade:** P4
+**Justificativa da prioridade:** não bloqueia o usuário
 
 **Ambiente:**
-- Navegador: [ex.: Chrome 121.0]
-- Sistema Operacional: [ex.: Windows 11]
+- Navegador: Chrome 121.0
+- Sistema Operacional: Windows 10
 - Versão da aplicação: TarefaQS v1.0.0
 
 **Passos para reprodução:**
-1. Passo numerado e objetivo
-2. Outro passo claro o suficiente para qualquer pessoa reproduzir
-3. ...
+1.	Deixe o título vazio
+2.	Escolha uma categoria, um prazo e uma prioridade
+3.	Clique no botão ‘Adicionar Tarefa’
 
 **Resultado esperado:**
-[O que deveria acontecer segundo o comportamento desejado.]
+Não deveria ser possível inserir uma tarefa com título vazio
 
 **Resultado obtido:**
-[O que efetivamente acontece.]
+É possível inserir título vazio
 
 **Evidência:**
-![Descrição da evidência](evidencias/bug-001-captura.png)
-
-> Se preferir anexar um GIF ou arquivo de log, crie uma pasta
-> `evidencias/` ao lado deste arquivo e referencie o arquivo aqui.
+É possível ver que a tarefa está sem título ao compararmos com a tarefa de baixo
+<img width="886" height="221" alt="image" src="https://github.com/user-attachments/assets/8334a721-37b8-4f5f-9f31-ead35ee0a0b6" />
 
 **Sugestão de causa raiz (opcional):**
-[Palpite informado — útil para quem vai corrigir.]
+Deixar o campo obrigatório
 
 ---
 
 ## BUG-002
 
-**Título:**
+**Título:** [Guardar Tarefa] A tarefa não é salva após reiniciar a pagina
 
-**Severidade:**
-**Justificativa da severidade:**
+**Severidade:** Critico
+**Justificativa da severidade:** Tudo será perdido após reiniciar a pagina
 
-**Prioridade:**
-**Justificativa da prioridade:**
+**Prioridade:** P1
+**Justificativa da prioridade:** Bloqueia o uso contínuo do usuário
 
 **Ambiente:**
-- Navegador:
-- Sistema Operacional:
+- Navegador: Chrome 121.0
+- Sistema Operacional: Windows 10
 - Versão da aplicação: TarefaQS v1.0.0
 
 **Passos para reprodução:**
-1.
-2.
-3.
+1. Preencha os campos para inserir uma tarefa
+2. Clique em 'Adicionar Tarefa'
+3. Reinicie a página
 
-**Resultado esperado:**
+**Resultado esperado:** Dados serem salvos mesmo após reiniciar a página
 
-**Resultado obtido:**
+**Resultado obtido:** Dados são perdidos após reiniciar a página
 
-**Evidência:**
-
-**Sugestão de causa raiz (opcional):**
+**Evidência:**Após reiniciar, é perdido
+<img width="824" height="838" alt="image" src="https://github.com/user-attachments/assets/988818fd-3e3c-4a33-b0e6-807e0bc63d97" />
+<img width="829" height="891" alt="image" src="https://github.com/user-attachments/assets/61846d85-e1a7-45a8-a8d3-b6103ec6aa34" />
 
 ---
 
 ## BUG-003
 
-**Título:**
+**Título:** [Prioridade] É possível definiar prioridade fora da escala permitida
 
-**Severidade:**
-**Justificativa da severidade:**
+**Severidade:** Alto
+**Justificativa da severidade:** ao definir prioridade fora da escala permitida, uma regra de negócio é quebrada
 
-**Prioridade:**
-**Justificativa da prioridade:**
+**Prioridade:** P2
+**Justificativa da prioridade:** tem de ser corrigido rapidamente porque uma regra de negócio está sendo infringida
 
 **Ambiente:**
-- Navegador:
-- Sistema Operacional:
+- Navegador: Chrome 121.0
+- Sistema Operacional: Windows 10
 - Versão da aplicação: TarefaQS v1.0.0
 
 **Passos para reprodução:**
-1.
-2.
+1. Preencha 'Titulo', 'Categoria', 'Prazo'
+2. Preencha 'Prioridade' com um número MAIOR que 5, ou menor que 1
 3.
 
-**Resultado esperado:**
+**Resultado esperado:** Possível inserir prazo apenas no "Range" permitido (1 a 5)
 
-**Resultado obtido:**
+**Resultado obtido:** Possível inserir prazo menor que 1 ou maior que 5
 
 **Evidência:**
 
-**Sugestão de causa raiz (opcional):**
+<img width="788" height="266" alt="image" src="https://github.com/user-attachments/assets/673b5674-e806-447e-984f-7f712f5ba5e7" />
+
 
 ---
 
