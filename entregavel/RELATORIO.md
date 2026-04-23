@@ -272,17 +272,14 @@ async function listarUsuariosAtivos() {
 ### Resumo
 
 | # | Linha | Dimensão | Rótulo | Severidade |
-|---|-------|----------|--------|------------|
-| 1 |       |          |        |            |
-| 2 |       |          |        |            |
-| 3 |       |          |        |            |
-| 4 |       |          |        |            |
-| 5 |       |          |        |            |
-| 6 |       |          |        |            |
+|---|--------|----------|--------|------------|
+| 1 |   11    |Segurança|blocker|Crítica|
+| 2 |   43-93 |Complexidade|major|Alta|
+| 3 | 43,102  |Padrões|major|Média|
+| 4 |  16,19  |Erros|major|Alta|
+| 5 |  34-36  |Erros|major|Média|
+| 6 |  7      |Padrões|nit|Baixa|
 
-### Findings detalhadas
-
-> Cole integralmente aqui suas findings copiadas do formulário.
 
 ---
 
@@ -292,11 +289,11 @@ async function listarUsuariosAtivos() {
 
 **Qual dimensão do checklist foi mais difícil aplicar? Por quê?**
 
-[Escrevam aqui.]
+A parte de Complexidade. Aquele monte de if e else um dentro do outro nos cálculos de limite deu um nó na cabeça. Quando o código está muito bagunçado assim, fica bem difícil ter certeza se a regra está certa ou se tem algum erro escondido no meio da confusão.
 
 **O que vocês fariam diferente se revisassem o código novamente?**
 
-[Escrevam aqui.]
+Eu usaria ferramentas automáticas para achar os erros bobos de segurança e padronização logo de cara. Isso pouparia um tempão e deixaria a gente livre para focar no que é mais importante, como a estrutura geral e os problemas de lógica mais pesados.
 
 ---
 
@@ -307,7 +304,7 @@ async function listarUsuariosAtivos() {
 
 - [ ] Não usamos IA nesta atividade.
 - [ ] Usamos IA para esclarecer conceitos teóricos.
-- [ ] Usamos IA para revisar a redação dos bug reports.
+- [x] Usamos IA para revisar a redação dos bug reports.
 - [ ] Usamos IA para discutir se um achado era ou não um defeito.
 - [ ] Uso específico: [descreva]
 
